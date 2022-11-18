@@ -1,0 +1,13 @@
+drop table offices;
+create table offices
+(office number(2,0) primary key,
+city varchar2(15) not null,
+region varchar2(10) not null,
+mgr number(3,0),
+target number(10,2),
+sales number(10,2) not null);
+insert into offices values(22,'Denver','Western',108,300000,186042);
+insert into offices values(11,'New York','Eastern',106,575000,692637);
+insert into offices values(12,'Chicago','Eastern',104,800000,735042);
+insert into offices values(13,'Atlanta','Eastern',105,350000,367911);
+insert into offices values(21,'Los Angeles','Western',108,725000,835915);

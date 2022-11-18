@@ -1,0 +1,21 @@
+drop table salesreps;
+create table salesreps
+(empl_num number(3,0) primary key,
+name varchar2(15) not null,
+age number(3,0),
+rep_office number(2,0),
+title varchar2(10),
+hire_date varchar2(10) not null,
+manager number(3,0),
+quota number(10,2),
+sales number(10,2) not null);
+insert into salesreps values (105,'Bill Adams',37,13,'Sales Rep','12-FEB-18',104,350000,367911);
+insert into salesreps values (109,'Mary Jones',31,11,'Sales Rep','12-OCT-19',106,300000,392725);
+insert into salesreps values (102,'Sue Smith',48,21,'Sales Rep','10-DEC-20',108,350000,474050);
+insert into salesreps values (106,'Sam Clark',52,11,'VP Sales','14-JUN-21',NULL,275000,299912);
+insert into salesreps values (104,'Bob Smith',33,12,'Sales Mgr','19-MAY-22',106,200000,142594);
+insert into salesreps values (101,'Dan Roberts',45,12,'Sales Rep','20-OCT-18',104,300000,305673);
+insert into salesreps values (110,'Tom Synder',41,NULL,'Sales Rep','13-JAN-19',101,NULL,75985);
+insert into salesreps values (108,'Larry Fitch',62,21,'Sales Mgr','12-OCT-20',106,350000,361865);
+insert into salesreps values (103,'Paul Cruz',29,12,'Sales Rep','01-MAR-22',104,275000,286775);
+insert into salesreps values (107,'Nacy Angelli',49,22,'Sales Rep','14-NOV-21',108,300000,186042);
