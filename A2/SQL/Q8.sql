@@ -1,0 +1,3 @@
+SELECT DISTINCT title
+FROM salesreps
+WHERE title IS NOT NULL;
