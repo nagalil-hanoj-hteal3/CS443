@@ -5,7 +5,7 @@ CREATE TABLE Physician(
 	TreatId						NUMBER,
 	CONSTRAINT Physician_PK			        PRIMARY KEY(PhysID),
 	CONSTRAINT Physician_FK1		        FOREIGN KEY(PhysDept) REFERENCES Department(PhysDept),
-	CONSTRAINT Physician_FK2			      FOREIGN KEY(TreatId) REFERENCES Treatment(TreatId)
+	CONSTRAINT Physician_FK2			FOREIGN KEY(TreatId) REFERENCES Treatment(TreatId)
 );
 
 CREATE TABLE Department(
