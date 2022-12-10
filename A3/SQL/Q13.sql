@@ -1,0 +1,8 @@
+--13)	List all the products (only Product_ID) that have never been sold.
+
+SELECT PRODUCT_ID
+FROM PRODUCTS
+WHERE NOT EXISTS 
+(SELECT ORDERS.QTY
+ FROM ORDERS
+ WHERE ORDERS.PRODUCT = PRODUCTS.PRODUCT_ID);
