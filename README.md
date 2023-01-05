@@ -8,7 +8,7 @@ This course will explore the development of database systems, and the Relational
 **Prerequisite**: 
 CS 311: Data Structure and Algorithms
 
-#Order of CS443 Coursework
+# Order of CS443 Coursework
 - Lab 1 (Intro to ERD)
 - Lab 2 (ERD)
 - Lab 3 (ERD)
